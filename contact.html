@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact me</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./navbar.css">
+</head>
+
+<body>
+
+  <body>
+    <div class="super_main">
+      <header class="sticky">
+        <div class="Nav-Bar">
+          <div class="HamBurger">
+            <span class="Nav-Bar-Line"></span>
+            <span class="Nav-Bar-Line"></span>
+            <span class="Nav-Bar-Line"></span>
+          </div>
+          <ul class="Nav-ul">
+            <li class="Nav-li" id="1">
+              <a href="./index.html" class="Nav-a">Home</a>
+            </li>
+            <li class="Nav-li" id="2">
+              <a href="./page2.html#about" class="Nav-a">About</a>
+            </li>
+
+            <li class="Nav-li" id="3">
+              <a href="./page2.html#skills" class="Nav-a">Skills</a>
+            </li>
+            <li class="Nav-li" id="4">
+              <a href="./page2.html#projects" class="Nav-a">Projects
+              </a>
+            </li>
+            <li class="Nav-li" id="5">
+              <a href="./contact.html" class="Nav-a">Contact Me</a>
+            </li>
+            </a>
+          </ul>
+        </div>
+      </header>
+      <div class="background-div">
+        <!-- <div class="container" id="send_msg"> -->
+          <form action="https://api.web3forms.com/submit" method="POST" class="container" id="send_msg">
+            <h3>Get in Touch !</h3>
+            <div class="line"></div>
+            <p class="mail-id">hemachandrang20@gmail.com | +91 8056357169</p>
+            <div class="row bg1">
+              <div class="col-12">
+                <input type="hidden" name="access_key" value="514d3fdd-517e-403b-be75-5562a3103984">
+
+                <label for="1">Name</label>
+                <input name="name" type="text" id="1" required>
+              </div>
+              <div class="col-12">
+                <!-- <label for="2">Last Name</label> -->
+                <!-- <input name="last" type="text" id="2"> -->
+              </div>
+            </div>
+            <div class="row bg2">
+              <div class="col-12">
+                <label for="3">Email</label><br>
+                <input name="email" type="email" id="3" required>
+              </div>
+              <div class="col-6">
+                <!-- <label for="4">Phone</label><br> -->
+                <!-- <input name="phone" type="text" id="4"> -->
+              </div>
+            </div>
+            <div class="row bg3">
+              <div class="col-12">
+                <label for="5">Message</label><br>
+                <textarea name="msg" id="5" cols="30" rows="5" class="txt_area" required></textarea>
+              </div>
+              <div class="col-12">
+                <button name="submit" type="submit" class="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="footer">
+          <p class="copyright">© All rights are reserved | Hemachandran-G</p>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+  <script>
+    let hambuger = document.querySelector(".HamBurger");
+    let menu = document.querySelector(".Nav-ul");
+
+    let a1Element = document.getElementById("1");
+    let a2Element = document.getElementById("2");
+    let a3Element = document.getElementById("3");
+    let a4Element = document.getElementById("4");
+    let a5Element = document.getElementById("5");
+
+
+    hambuger.onclick = function () {
+      hambuger.classList.toggle("Active");
+      menu.classList.toggle("Active");
+    }
+
+    window.onscroll = () => {
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+
+    a1Element.onclick = function () {
+      hambuger.classList.remove("Active");
+      menu.classList.remove("Active");
+
+    }
+    a2Element.onclick = function () {
+      hambuger.classList.remove("Active");
+      menu.classList.remove("Active");
+
+    }
+    a3Element.onclick = function () {
+      hambuger.classList.remove("Active");
+      menu.classList.remove("Active");
+
+    }
+    a4Element.onclick = function () {
+      hambuger.classList.remove("Active");
+      menu.classList.remove("Active");
+
+    }
+    a5Element.onclick = function () {
+      hambuger.classList.remove("Active");
+      menu.classList.remove("Active");
+
+    }
+
+  </script>
+  <script src="./hideins.js"></script>
+  <!-- <script src="https://web3forms.com/client/script.js" async defer></script> -->
+
+</html>
